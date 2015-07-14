@@ -1,0 +1,37 @@
+# PR1_Usachev_lab_rab1
+<!DOCTYPE HTML>
+ <html>
+ <head> 
+<title>Задача 1</title>
+</head> 
+<body> 
+<script>
+var y;
+var x;
+var a1 = prompt('Введите a1', '');
+var b1 = prompt('Введите b1', '');
+var c1 = prompt('Введите c1', '');
+var a2 = prompt('Введите a2', '');
+var b2 = prompt('Введите b2', '');
+var c2 = prompt('Введите c2', '');
+a1 = parseInt(a1);
+b1 = parseInt(b1);
+c1 = parseInt(c1);
+a2 = parseInt(a2);
+b2 = parseInt(b2);
+c2 = parseInt(c2);
+
+if (Math.abs((a1*b2)-(b1*a2))>=0.0001)
+{ 
+y=((c2*a1-c1*a2)/(b1*a2-b2*a1));
+x=((-c1-((c2*a1-c1*a2)/(b1*a2-b2*a1))*b1)/a1);
+document.write('x= ',x);
+document.write('y= ',y);
+}
+else 
+{
+alert('условие не выполено');
+}
+</script>
+ </body>
+ </html> 
